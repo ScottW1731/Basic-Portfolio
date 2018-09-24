@@ -1,0 +1,49 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Title and header -->
+    <title>Portfolio </title>
+    <header>Portfolio</header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+        <header>
+                <div class="container">
+                <h1>Scott Wagner
+                      <!-- this is my links to the other pages and it also aligns right here -->
+                <div class="right">
+                            <a href="../HW1/Index.html">about me</a>
+                            <a href="../contact/contact.html">contact</a>
+                            <a href="../portfolio/port.html">portfolio</a>
+                          </div>
+                        </h1> 
+              </header>    
+              <body>
+                <!-- The grid: four columns -->
+            <div class="row images">
+                <div class="column">
+                  <img src="../aboutme/assets/Carnosaur.jpg" alt="Nature" onclick="openImg(this);">
+                </div>
+                <div class="column">
+                  <img src="../aboutme/assets/Kroxigor.png" alt="Snow" onclick="openImg(this);">
+                </div>
+                <div class="column">
+                  <img src="../aboutme/assets/TroglodonMD.jpg" alt="Mountains" onclick="openImg(this);">
+                </div>
+                <div class="column">
+                  <img src="../aboutme/assets/KroqGar.jpg" alt="Lights" onclick="openImg(this);">
+                </div>
+              </div>
+              <!-- The expanding image container -->
+              <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+              </div>
+            </body>    
+</html>
